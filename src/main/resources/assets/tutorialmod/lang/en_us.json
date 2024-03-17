@@ -1,0 +1,10 @@
+{
+  "item.tutorialmod.stopam": "Stopam",
+  "item.tutorialmod.raw_stopam": "Raw Stopam",
+
+  "block.tutorialmod.stopam_block": "Block of Stopam",
+  "block.tutorialmod.stopam_ore": "Stopam Ore",
+  "block.tutorialmod.deepslate_stopam_ore": "Deepslate Stopam Ore",
+
+  "itemGroup.tutorialtab": "Mefetpresoer"
+}
