@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:stopam_ore",
+    "tutorialmod:stopam_block",
+    "tutorialmod:deepslate_stopam_ore"
+  ]
+}

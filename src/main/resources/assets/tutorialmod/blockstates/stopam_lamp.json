@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "tutorialmod:block/stopam_lamp"
+    },
+    "lit=true": {
+      "model": "tutorialmod:block/stopam_lamp_on"
+    }
+  }
+}

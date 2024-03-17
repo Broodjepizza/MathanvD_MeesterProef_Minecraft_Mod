@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 10,
+  "experience": 0.1,
+  "group": "stopam",
+  "ingredient": {
+    "item": "tutorialmod:stopam_ore"
+  },
+  "result": "tutorialmod:raw_stopam"
+}

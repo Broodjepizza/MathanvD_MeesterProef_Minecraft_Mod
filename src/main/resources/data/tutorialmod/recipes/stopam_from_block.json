@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tutorialmod:stopam_block"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:stopam",
+    "count": 9
+  }
+}
