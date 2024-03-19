@@ -7,6 +7,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.LightBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,6 +15,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pizza.tutorialmod.TutorialMod;
+import net.pizza.tutorialmod.block.custom.StopamLamp;
 import net.pizza.tutorialmod.item.ModCreativeModeTab;
 import net.pizza.tutorialmod.item.ModItems;
 
@@ -36,6 +38,13 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5f).requiresCorrectToolForDrops(),
                     UniformInt.of(16, 20)), ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> STOPAM_LAMP = registerBlock("stopam_lamp",
+            () -> new StopamLamp(BlockBehaviour.Properties.of(Material.AMETHYST)
+                    .strength(1f)
+                //    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(StopamLamp.LIT) ? 15 : 0)
+                    .sound(SoundType.AMETHYST)), ModCreativeModeTab.TUTORIAL_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
